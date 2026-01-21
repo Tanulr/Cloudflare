@@ -1,0 +1,23 @@
+{
+  "name": "feedback-analyzer-v2",
+  "version": "2.0.0",
+  "description": "AI-powered feedback analyzer with PM learning",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev --local",
+    "dev:remote": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "setup-db": "wrangler d1 execute feedback-db --local --file=./schema.sql",
+    "setup-db-remote": "wrangler d1 execute feedback-db --remote --file=./schema.sql",
+    "seed-data": "wrangler d1 execute feedback-db --local --file=./seed.sql",
+    "seed-data-remote": "wrangler d1 execute feedback-db --remote --file=./seed.sql"
+  },
+  "keywords": ["cloudflare", "workers", "ai", "feedback"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241127.0",
+    "wrangler": "^3.87.0",
+    "typescript": "^5.3.3"
+  }
+}

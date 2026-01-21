@@ -1,0 +1,21 @@
+name = "feedback-analyzer-v2"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+# D1 Database for storing tweets, analysis, and PM corrections
+#[[d1_databases]]
+#binding = "DB"
+#database_name = "feedback-db"
+#database_id = "feedback-db-local"
+
+#Created your new D1 database.
+
+[[d1_databases]]
+binding = "DB"
+database_name = "feedback-db"
+database_id = "b1894421-7682-46ee-933f-f062f5d298dc"
+
+# Workers AI for auto-categorization with learning
+[ai]
+binding = "AI"
