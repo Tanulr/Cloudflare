@@ -2,6 +2,10 @@
 
 AI-powered feedback categorization tool that learns from Product Manager corrections.
 
+Worker deployment: https://feedback-analyzer-v2.kenyasimp4mepls.workers.dev/
+GitHub repo: https://github.com/Tanulr/Cloudflare/
+LinkedIn: https://www.linkedin.com/in/thanushree-r/
+
 ## 🎯 Overview
 
 This tool helps Product Managers:
